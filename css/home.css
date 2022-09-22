@@ -1,0 +1,35 @@
+:root{
+    --primary: #4F9BD4;
+    --secondary: #A8C7DE;
+    --tertiary: #191919;
+    --base: #191919;
+    --base2: #595D68;
+    --contrast: #ffffff;
+}
+body{
+    background-color: var(--base);
+    color: var(--contrast);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li, a {
+    font-family: 'Share Tech', sans-serif;    font-weight: 400;
+    font-size: 23px;
+    text-decoration: none;
+    color: var(--contrast);
+}
+li{
+    display: inline-block;
+    padding: 2px 2vw;
+    transform-origin: bottom right;
+}
+li:hover{
+    background-color: #4F9BD4;
+}
