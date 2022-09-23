@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <img src="assets/logo.png" alt="php motors logo">
         <nav>
             <li><a href="index.php">Home</a></li>
             <li><a href="home.php">Classic</a></li>
@@ -19,13 +20,14 @@
             <li><a href="home.php">Trucks</a></li>
             <li><a href="home.php">Used</a></li>
         </nav>
+        <h1>My Account</h1>
+
     </header>
     <main>
         <div id="showcase">
             <canvas class="webgl"></canvas>
             <script type="module" src="index.js"></script>
-        </div>
-        
+        </div>    
     </main>
     <footer>
 

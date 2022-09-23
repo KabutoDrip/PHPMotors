@@ -9,6 +9,10 @@
 body{
     background-color: var(--base);
     color: var(--contrast);
+    font-family: 'Share Tech', sans-serif;    font-weight: 400;
+}
+h1{
+    font-family: 'Share Tech', sans-serif;    font-weight: 400;
 }
 header{
     display: flex;
@@ -20,7 +24,6 @@ ul{
     padding: 0;
 }
 li, a {
-    font-family: 'Share Tech', sans-serif;    font-weight: 400;
     font-size: 23px;
     text-decoration: none;
     color: var(--contrast);
@@ -31,5 +34,8 @@ li{
     transform-origin: bottom right;
 }
 li:hover{
-    background-color: #4F9BD4;
+    background-color: var(--primary);
+}
+canvas{
+    height: 100vh;
 }
