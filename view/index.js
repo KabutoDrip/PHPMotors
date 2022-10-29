@@ -1,9 +1,14 @@
-import * as THREE from './three.js-master/build/three.module.js'
-import {GLTFLoader} from './three.js-master/examples/jsm/loaders/GLTFLoader.js'
+import * as THREE from '../three.js-master/build/three.module.js'
+import {GLTFLoader} from '../three.js-master/examples/jsm/loaders/GLTFLoader.js'
 
 const canvas = document.querySelector('.webgl')
 const scene = new THREE.Scene()
-scene.background = new THREE.Color(0xdddddd)
+const bgloader = new THREE.TextureLoader();
+bgloader.load('assets/small_check.jpg' , function(texture)
+            {
+             scene.background = texture;  
+            });
+
 const loader = new GLTFLoader()
 
 loader.load('assets/scene.glb', function(glb){
@@ -17,7 +22,7 @@ loader.load('assets/scene.glb', function(glb){
     console.log('An error occured')
 })
 const ambientLight = new THREE.AmbientLight (0x404040,10);
-const directionalLight = new THREE.DirectionalLight(0xffffff,10);
+const directionalLight = new THREE.DirectionalLight(0xfdfbd3,5);
 directionalLight.position.set(0,1,0);
 directionalLight.castShadow = true;
 scene.add(ambientLight)

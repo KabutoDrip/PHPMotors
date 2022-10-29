@@ -1,0 +1,72 @@
+
+#create{
+    text-align: center;
+    padding-bottom: 50px;
+    text-decoration: underline;
+}
+#newacc{
+    color: #4F9BD4 ;
+}
+form{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#submit{
+    padding: 10px 20px;
+    background-color: #A8C7DE;
+    border-radius: 2px;
+    border: 0;
+    width: 100%;
+}
+
+#form_submit{
+    margin: 0 auto;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+}
+#submit:hover{
+    background-color: #4F9BD4;}
+#login{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.form_element {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.form_element input {
+  width: 100%;
+  padding: 20px 0 10px 0 ;
+  font-size: 16px;
+  color: #191919;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #191919;
+  outline: none;
+  background: transparent;
+}
+.form_element label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0 0px 0;
+  font-size: 16px;
+  color: #191919;
+  transition: .2s;
+}
+.form_element input:focus ~ label,
+.form_element input:valid ~ label {
+  top: -10px;
+  left: 0;
+  color: #4F9BD4;
+  font-size: 12px;
+}

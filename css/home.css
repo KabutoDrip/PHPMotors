@@ -6,6 +6,17 @@
     --base2: #595D68;
     --contrast: #ffffff;
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#templateh1{
+    background-color: var(--contrast);
+    color: var(--tertiary);
+    padding: 3em;
+}
 body{
     background-color: var(--base);
     color: var(--contrast);
@@ -16,8 +27,19 @@ h1{
 }
 header{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    margin: 10px;
+}
+#upper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+
+}
+header img{
+    width: 10em;
 }
 ul{
     margin: 0;
@@ -39,3 +61,65 @@ li:hover{
 canvas{
     height: 100vh;
 }
+#upgrades{
+    margin: 2em;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #4F9BD4;
+    gap: 2em;
+    align-content: center;
+    justify-items: center;
+    width: 50vw;
+}
+.upgrade-box{
+    margin: 5em;
+    background-color: var(--contrast);
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--base);
+}
+.upgrade-box img{
+    max-width: 100px;
+}
+#reviews{
+    margin: 2em;
+    padding: 2em;
+    width: 50vw;
+}
+#main{
+ display: flex;
+}
+footer{
+    text-align: center;
+    background-color: #A8C7DE;
+    color: #191919;
+    padding: 2em;
+}
+
+@media (max-width: 700px) {
+    header{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    header h1{
+        padding: 10px;
+        margin-left: 50px;
+        text-align: center;
+    }
+    #main{
+        flex-direction: column-reverse;
+    }
+    #upgrades{
+        width: 90%;
+    }
+    #reviews{
+        width: 90%;
+    }
+  }
+  
+  
